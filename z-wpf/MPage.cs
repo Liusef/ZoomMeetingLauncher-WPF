@@ -53,6 +53,11 @@ namespace z_wpf
 			sp3.Children.Add(jm);
 			var cl = (new wuxc.Button { Content = "Copy Link", CornerRadius = new wux.CornerRadius(4), Margin = new wux.Thickness {Left=24}});
 			cl.Click += Cl_Click;
+			var clf = new Flyout();
+			var spsomething = new wuxc.StackPanel();
+			spsomething.Children.Add(new wuxc.TextBlock { Text = "Copied!", HorizontalAlignment = wux.HorizontalAlignment.Center, VerticalAlignment = wux.VerticalAlignment.Center });
+			clf.Content = spsomething;
+			cl.Flyout = clf;
 			sp3.Children.Add(cl);
 			var em = new wuxc.Button { Content = "Edit Entry", CornerRadius = new wux.CornerRadius(4), Margin = new wux.Thickness { Left = 24 } };
 			var emf = new Flyout();

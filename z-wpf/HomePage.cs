@@ -40,8 +40,7 @@ namespace z_wpf
 			MainWindow.sketchAsfOml.SelectedItem = null;
 			Meeting temp = e.ClickedItem as Meeting;
 			MPage.setParams(temp.name, temp.desc, temp.code, temp.pwd);
-			wuxc.Frame huh = MainWindow.sketchAsfOml.Content as wuxc.Frame;
-			huh.Content = new MPage();
+			(MainWindow.sketchAsfOml.Content as wuxc.Frame).Content = new MPage();
 		}
 
 		private wux.DataTemplate wellShitHereWeGoAgainWithThisFlamingPileOfGarbageBecauseXAMLIslandsWontActuallyLetMeJustFuckingUseXAMLLikeWHATTHEFUCK()

@@ -43,8 +43,8 @@ namespace z_wpf
 		{
 			if (MyNavView.Child is wuxc.NavigationView navView)
 			{
-				navView.MenuItems.Add(nvItem("Home", "Home", "\xE80F"));
-				navView.MenuItems.Add(nvItem("Add", "Add", "\xE948"));
+				navView.MenuItems.Add(nvItem("Home", "Launcher", "\xE80F"));
+				navView.MenuItems.Add(nvItem("Add", "Add Meetings", "\xE948"));
 				navView.MenuItems.Add(nvItem("About", "About", "\xE946"));
 				navView.IsBackButtonVisible = wuxc.NavigationViewBackButtonVisible.Collapsed;
 				navView.IsSettingsVisible = false;
@@ -79,11 +79,11 @@ namespace z_wpf
 			{
 				switch ((string) item.Content)
 				{
-					case "Home":
-						navFrame.Content = new HomePage(); ;
+					case "Launcher":
+						(sketchAsfOml.Content as wuxc.Frame).Content  = new HomePage();
 						break;
-					case "Add":
-						navFrame.Content = new AddPage(); ;
+					case "Add Meetings":
+						(sketchAsfOml.Content as wuxc.Frame).Content = new AddPage();
 						break;
 					case "About":
 						//TODO
