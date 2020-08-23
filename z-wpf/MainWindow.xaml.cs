@@ -86,7 +86,7 @@ namespace z_wpf
 						(sketchAsfOml.Content as wuxc.Frame).Content = new AddPage();
 						break;
 					case "About":
-						//TODO
+						(sketchAsfOml.Content as wuxc.Frame).Content = new InfoPage();
 						break;
 					default:
 						break;
