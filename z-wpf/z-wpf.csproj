@@ -2,11 +2,13 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
     <RootNamespace>z_wpf</RootNamespace>
     <UseWPF>true</UseWPF>
     <Platforms>AnyCPU;x64</Platforms>
     <StartupObject>z_wpf.Program</StartupObject>
+    <ApplicationIcon>zml.ico</ApplicationIcon>
+    <AssemblyName>Meeting Launcher</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

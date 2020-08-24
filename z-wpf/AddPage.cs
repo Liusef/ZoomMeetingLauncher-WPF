@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT;
-using Microsoft.Toolkit.Wpf.UI.XamlHost;
 using wuxc = Windows.UI.Xaml.Controls;
 using wux = Windows.UI.Xaml;
-using System.Windows;
-using System.IO;
 
 namespace z_wpf
 {

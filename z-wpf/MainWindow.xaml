@@ -8,7 +8,7 @@
         xmlns:local="clr-namespace:z_wpf"
         mc:Ignorable="d"
         Closing="Window_Closing"
-        Title="MainWindow" Height="600" Width="680">
+        Title="Meeting Launcher" Height="600" Width="680">
 
     <Grid>
         <xamlhost:WindowsXamlHost x:Name="MyNavView" InitialTypeName="Windows.UI.Xaml.Controls.NavigationView" ChildChanged="MyNavView_ChildChanged"/>
